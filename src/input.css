@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: "Inter", sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: "InterVariable", sans-serif; font-optical-sizing: auto; }
+}
+
+@font-face {
+  font-family: InterVariable;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./InterVariable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("./Inter-Regular.woff2") format("woff2");
+}
+
+#bg {
+	background-image: url("./mpay-transparent.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
